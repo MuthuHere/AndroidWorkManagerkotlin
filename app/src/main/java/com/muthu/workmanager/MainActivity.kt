@@ -2,11 +2,8 @@ package com.muthu.workmanager
 
 import android.arch.lifecycle.Observer
 import android.os.Bundle
-import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log.d
-import android.view.Menu
-import android.view.MenuItem
 import androidx.work.OneTimeWorkRequest
 import androidx.work.WorkManager
 
@@ -21,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
 
         //init Work load
-        val uploadWorkRequest = OneTimeWorkRequest.Builder(UploadBagroundWork::class.java).build()
+        val uploadWorkRequest = OneTimeWorkRequest.Builder(UploadBackgroundWork::class.java).build()
 
         //use request
         val workManager = WorkManager.getInstance()

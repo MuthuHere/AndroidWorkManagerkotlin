@@ -3,7 +3,7 @@ package com.muthu.workmanager
 import android.util.Log.d
 import androidx.work.Worker
 
-class UploadBagroundWork : Worker() {
+class UploadBackgroundWork : Worker() {
 
     override fun doWork(): WorkerResult {
 
